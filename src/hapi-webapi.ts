@@ -676,8 +676,12 @@ export class ApiController implements IApiController {
     requestContext: any;
     request: HttpRequestMessage;
 
-    ok() { };
-    notFound() { };
-    statusCode(code: HttpStatusCode) { };
-    internalServerError() { };
+    protected ok() { };
+    
+    protected notFound() { 
+        return Hapi.error.notFound();
+    };
+    
+    protected statusCode(code: HttpStatusCode) { };
+    protected internalServerError() { };
 }

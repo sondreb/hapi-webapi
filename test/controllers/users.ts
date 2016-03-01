@@ -1,4 +1,4 @@
-import {HttpGet, HttpPost, HttpDelete, HttpPut, RoutePrefix, Route, ApiController} from '../../hapi-webapi';
+import {HttpGet, HttpPost, HttpDelete, HttpPut, RoutePrefix, Route, ApiController} from '../../src/hapi-webapi';
 
 @RoutePrefix("users")
 export class UsersController extends ApiController {
@@ -7,6 +7,12 @@ export class UsersController extends ApiController {
     getUserById(id: string) {
 
         return "getUserById:" + id;
+    }
+
+    @Route("search")
+    @HttpPost() 
+    searchUsers(id: string) {
+        return this.notFound();
     }
 
     @Route("list")
