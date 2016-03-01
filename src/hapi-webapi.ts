@@ -232,8 +232,7 @@ export interface IAppBuilder {
     //userCors(corsOptions: any);
     
     configuration: HttpConfiguration;
-
-    useDirectoryBrowser();
+    useDirectoryBrowser(localPath: string, requestPath: string);
     useJwtBearerAuthentication(jwtBearerAuthenticationOptions: any);
     useOAuthBearerAuthentication(oAuthBearerAuthenticationOptions: any);
     useStaticFiles(requestPath: string);
@@ -256,8 +255,16 @@ export class AppBuilder implements IAppBuilder {
     }*/
     
     /** Not implemented. */
-    public useDirectoryBrowser() {
-
+    public useDirectoryBrowser(localPath: string, requestPath: string) {
+         if (this.config == undefined)
+        {
+            throw Error('Method must be called after useWebApi.');
+        }
+        
+        this.config.properties.add('directory:browser', true);        
+        this.config.properties.add('directory:path', localPath);
+        this.config.properties.add('directory:route', requestPath);
+        
     }
     
     /** Not implemented. */
@@ -272,7 +279,10 @@ export class AppBuilder implements IAppBuilder {
     
     /** Not implemented */
     public useStaticFiles(requestPath: string) {
-
+        if (this.config == undefined)
+        {
+            throw Error('Method must be called after useWebApi.');
+        }
     }
 
     public useWelcomePage() { }
@@ -339,7 +349,7 @@ export class WebApp {
         modules.add({ type: require('good'), options: {} });
         modules.add({ type: require('good-console'), options: {} });
         modules.add({ type: require('blipp'), options: {} });
-
+        
         if (app.configuration.properties["swagger:enabled"] === true)
         {
             let options = app.configuration.properties["swagger:options"];
@@ -489,6 +499,23 @@ export class WebApp {
                 }
             });
         });
+        
+        if (appBuilder.configuration.properties["directory:browser"] === true) {
+            
+            let browserPath = appBuilder.configuration.properties["directory:path"];
+            let browserRoute = appBuilder.configuration.properties["directory:route"];
+            
+             server.route({
+                    method: 'GET',
+                    path: browserRoute,
+                    handler: {
+                        directory: {
+                            path: browserPath,
+                            listing: true
+                        }
+                    }
+                });
+        }
 
         server.start((err) => {
 
