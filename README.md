@@ -1,4 +1,4 @@
-# hapi-webapi
+# hapi-webapi ![build status](https://projects.visualstudio.com/DefaultCollection/_apis/public/build/definitions/312b44a5-2760-43de-8938-d8319566aa52/43/badge)
 Implements an abstraction for [Hapi](https://github.com/hapijs/hapi) using TypeScript, that provides a 
 similar pattern to the ASP.NET WebApi framework for implementing 
 Apis on [Hapi](http://hapijs.com/).
