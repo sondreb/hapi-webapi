@@ -103,4 +103,6 @@ npm start
 
 And open [localhost:4500](http://localhost:4500) or [localhost:4500/docs](http://localhost:4500/docs) for Swagger UI in your browser.
 
-
+## License
+    
+MIT © [Sondre Bjellås](http://sondreb.com)
