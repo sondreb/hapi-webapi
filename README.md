@@ -1,9 +1,12 @@
 # hapi-webapi
-Implements abstraction for Hapi in TypeScript that makes it similar to ASP.NET WebAPI to implement APIs on [Hapi](http://hapijs.com/).
+Implements an abstraction for [Hapi](https://github.com/hapijs/hapi) using TypeScript, that provides a 
+similar pattern to the ASP.NET WebApi framework for implementing 
+Apis on [Hapi](http://hapijs.com/).
 
 # Quickstart
 
-To get started quickly, you can clone the 'hapi-microservice' repository (coming soon), which includes all files needed to get started with TypeScript and the hapi-webapi.
+To get started quickly, you can clone the 'hapi-microservice' repository (coming soon), 
+which includes all files needed to get started with TypeScript and the hapi-webapi.
 
 # Getting started
 
@@ -98,6 +101,6 @@ Launch the application by running:
 npm start
 ```
 
-And open localhost:4500 or localhost:4500/docs for Swagger UI in your browser.
+And open [localhost:4500](http://localhost:4500) or [localhost:4500/docs](http://localhost:4500/docs) for Swagger UI in your browser.
 
 
