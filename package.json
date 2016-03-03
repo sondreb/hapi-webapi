@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "typescript": {
-    "definition": "index.d.ts"
+    "definition": "lib/index.d.ts"
   },
   "dependencies": {
     "autodts": "0.0.6",
