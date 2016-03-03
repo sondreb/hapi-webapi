@@ -59,7 +59,9 @@ class AppBuilder implements IAppBuilder {
         }
     }
 
-    public useWelcomePage() { }
+    public useWelcomePage() { 
+        
+    }
 
     public controllers: Collection<any> = new Collection<any>();
 
