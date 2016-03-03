@@ -8,9 +8,11 @@
         "noImplicitAny": false,
         "removeComments": true,
         "preserveConstEnums": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "declaration": true,
+        "outFile": "../dist/lib/hapi-webapi.js"
     },
-    "exclude": [
-        "node_modules"
+    "files": [
+        "hapi-webapi.ts"
     ]
 }

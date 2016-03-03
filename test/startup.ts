@@ -1,5 +1,5 @@
-import {HttpConfiguration, IAppBuilder, IStartup} from '../src/hapi-webapi';
-import {UsersController} from './controllers/users';
+/// <reference path="../dist/lib/hapi-webapi.d.ts" />
+/// <reference path="./controllers/UsersController" />
 
 const pgk = require('./package.json');
 
