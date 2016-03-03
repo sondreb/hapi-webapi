@@ -1,7 +1,8 @@
-import {HttpGet, HttpPost, HttpDelete, HttpPut, RoutePrefix, Route, ApiController} from '../../src/hapi-webapi';
+/// <reference path="../../dist/lib/hapi-webapi.d.ts" />
+"use strict";
 
 @RoutePrefix("users")
-export class UsersController extends ApiController {
+class UsersController extends ApiController {
     @Route("{id}")
     @HttpGet()  // Also supports @HttpPut, @HttpPost, @HttpDelete
     getUserById(id: string) {

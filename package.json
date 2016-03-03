@@ -7,9 +7,9 @@
     "preinstall": "npm install autodts",
     "postinstall": "autodts link",
     "prepublish": "tsc && autodts generate",
-    "test": "node test/test.js",
+    "test": "tsc --project test; node test/test.js",
     "setup": "npm install",
-    "build": "tsc"
+    "build": "tsc --project src"
   },
   "author": {
     "name": "Sondre Bjellås",
@@ -54,8 +54,9 @@
   "devDependencies": {
     "code": "2.x.x",
     "eslint": "2.x.x",
-    "lab": "10.x.x",
+    "github-markdown-css": "2.2.1",
     "gulp": "3.x.x",
+    "lab": "10.x.x",
     "typescript": "1.x.x"
   },
   "eslintConfig": {

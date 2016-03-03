@@ -1,0 +1,5 @@
+"use strict";
+
+interface IFilter {
+
+}
