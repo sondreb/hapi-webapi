@@ -164,6 +164,23 @@ class WebApp {
                 }
             });
         });
+        
+        if (appBuilder.configuration.properties["directory:browser"] === true) {
+            
+            let browserPath = appBuilder.configuration.properties["directory:path"];
+            let browserRoute = appBuilder.configuration.properties["directory:route"];
+            
+             server.route({
+                    method: 'GET',
+                    path: browserRoute,
+                    handler: {
+                        directory: {
+                            path: browserPath,
+                            listing: true
+                        }
+                    }
+                });
+        }
 
         server.start((err) => {
 

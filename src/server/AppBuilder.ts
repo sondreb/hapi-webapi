@@ -7,7 +7,7 @@ interface IAppBuilder {
     
     configuration: HttpConfiguration;
 
-    useDirectoryBrowser();
+    useDirectoryBrowser(localPath: string, requestPath: string);
     useJwtBearerAuthentication(jwtBearerAuthenticationOptions: any);
     useOAuthBearerAuthentication(oAuthBearerAuthenticationOptions: any);
     useStaticFiles(requestPath: string);
@@ -30,8 +30,15 @@ class AppBuilder implements IAppBuilder {
     }*/
     
     /** Not implemented. */
-    public useDirectoryBrowser() {
-
+    public useDirectoryBrowser(localPath: string, requestPath: string) {
+        if (this.config == undefined)
+        {
+            throw Error('Method must be called after useWebApi.');
+        }
+        
+        this.config.properties.add('directory:browser', true);        
+        this.config.properties.add('directory:path', localPath);
+        this.config.properties.add('directory:route', requestPath);
     }
     
     /** Not implemented. */
@@ -46,7 +53,10 @@ class AppBuilder implements IAppBuilder {
     
     /** Not implemented */
     public useStaticFiles(requestPath: string) {
-
+        if (this.config == undefined)
+        {
+            throw Error('Method must be called after useWebApi.');
+        }
     }
 
     public useWelcomePage() { }
