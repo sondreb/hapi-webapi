@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "watch": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "inlineSourceMap": false,
+        "sourceMap": true,
+        "moduleResolution": "node"
+    },
+    "exclude": [
+        "node_modules",
+        "typings"
+    ]
+}

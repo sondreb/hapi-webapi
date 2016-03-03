@@ -1,23 +1,25 @@
-/// <reference path="../../dist/lib/hapi-webapi.d.ts" />
+/// <reference path="../../lib/Index.d.ts" />
 "use strict";
 
-@RoutePrefix("users")
-class UsersController extends ApiController {
-    @Route("{id}")
-    @HttpGet()  // Also supports @HttpPut, @HttpPost, @HttpDelete
+import WebApi = require("../../lib/Index");
+
+@WebApi.RoutePrefix("users")
+export class UsersController extends WebApi.ApiController {
+    @WebApi.Route("{id}")
+    @WebApi.HttpGet()  // Also supports @HttpPut, @HttpPost, @HttpDelete
     getUserById(id: string) {
 
         return "getUserById:" + id;
     }
 
-    @Route("search")
-    @HttpPost() 
+    @WebApi.Route("search")
+    @WebApi.HttpPost() 
     searchUsers(id: string) {
         return this.notFound();
     }
 
-    @Route("list")
-    @HttpGet()
+    @WebApi.Route("list")
+    @WebApi.HttpGet()
     list() {
         // Examples of request object values available:
         // Url object.

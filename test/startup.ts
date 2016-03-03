@@ -1,12 +1,15 @@
-/// <reference path="../dist/lib/hapi-webapi.d.ts" />
-/// <reference path="./controllers/UsersController" />
+/// <reference path="../lib/Index.d.ts" />
+"use strict";
 
-const pgk = require('./package.json');
+import WebApi = require("../lib/Index");
+import {UsersController} from "./Controllers/UsersController";
 
-class Startup implements IStartup {
-    Configuration(app: IAppBuilder) {
+const pgk = require("../package.json");
 
-        var config = new HttpConfiguration();
+export class Startup implements WebApi.IStartup {
+    Configuration(app: WebApi.IAppBuilder) {
+
+        var config = new WebApi.HttpConfiguration();
         app.useWebApi(config);
 
         config.enableSwagger({ title: 'Directory API', description: pgk.description, version: pgk.version });
@@ -16,7 +19,7 @@ class Startup implements IStartup {
         app.controllers.add(UsersController);
 
         app.useWelcomePage();
-        app.useDirectoryBrowser('./public/', '/files/');
+        //app.useDirectoryBrowser('./public/', '/files/');
         //app.useStaticFiles('static');
     }
 }

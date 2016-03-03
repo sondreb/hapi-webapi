@@ -1,1 +1,1 @@
-require('./lib/src/hapi-webapi');
+require('./lib/index');
