@@ -1,7 +1,13 @@
-node_modules/
+.vscode
+test/
+src/
+test/
+.npmignore
 *.d.ts
 *.log
 *.tgz
+tsconfig.json
+typings.json
 
 !index.d.ts
 !index.ref.d.ts
