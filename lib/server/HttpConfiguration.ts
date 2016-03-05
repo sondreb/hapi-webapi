@@ -1,4 +1,3 @@
-/// <reference path="../../typings/merge.d.ts" />
 "use strict"
 
 const merge = require("merge");
