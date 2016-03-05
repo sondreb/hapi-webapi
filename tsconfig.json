@@ -11,10 +11,10 @@
         "preserveConstEnums": true,
         "inlineSourceMap": false,
         "sourceMap": true,
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "outDir": "lib"
     },
-    "exclude": [
-        "node_modules",
-        "typings"
+    "files": [
+        "src/Index.ts"
     ]
 }
