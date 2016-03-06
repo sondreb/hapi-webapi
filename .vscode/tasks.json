@@ -1,13 +1,16 @@
- {
+{
     "version": "0.1.0",
     "command": "tsc",
     "isShellCommand": true,
-     "args": [ "-module", "commonjs", "--experimentalDecorators" ],
+    "args": [
+        "-module",
+        "commonjs",
+        "--experimentalDecorators"
+    ],
     "showOutput": "silent",
-    "isWatching": true,
+    "isWatching": false,
     "problemMatcher": "$tsc-watch"
 }
-
 /*
 {
     "version": "0.1.0",
@@ -29,4 +32,4 @@
             ]
         }
     ]
-}*/
+}*/ 

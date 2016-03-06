@@ -1,0 +1,1 @@
+{"version":3,"file":"HttpDelete.js","sourceRoot":"","sources":["../../../src/routing/Annotations/HttpDelete.ts"],"names":[],"mappings":"AAAA,YAAY,CAAC;AAEb,OAAO,CAAC,kBAAkB,CAAC,CAAC;AAE5B;IACI,MAAM,CAAC,CAAC,MAAc,EAAE,WAAmB,EAAE,UAAwC;QAEjF,OAAO,CAAC,cAAc,CAAC,QAAQ,EAAE,QAAQ,EAAE,UAAU,CAAC,KAAK,CAAC,CAAC;QAC7D,MAAM,CAAC,UAAU,CAAC;IACtB,CAAC,CAAC;AACN,CAAC;AANe,kBAAU,aAMzB,CAAA"}

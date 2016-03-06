@@ -1,14 +1,11 @@
 "use strict";
 
-import Hapi = require("hapi");
-
+import * as Hapi from 'hapi';
 import {Collection} from "../collections/Collection";
 import {RequestHandler} from "../middleware/RequestHandler";
-
 import {IAppBuilder, AppBuilder} from "./AppBuilder";
 import {StartOptions} from "./StartOptions";
 import {IStartup} from "./Startup";
-
 
 export class WebApp {
 

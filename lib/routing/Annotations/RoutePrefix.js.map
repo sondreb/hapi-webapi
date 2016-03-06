@@ -1,0 +1,1 @@
+{"version":3,"file":"RoutePrefix.js","sourceRoot":"","sources":["../../../src/routing/Annotations/RoutePrefix.ts"],"names":[],"mappings":"AAAA,YAAY,CAAC;AAEb,OAAO,CAAC,kBAAkB,CAAC,CAAC;AAE5B,qBAA4B,MAAc;IACtC,MAAM,CAAC,UAAS,MAAgB;QAC5B,OAAO,CAAC,cAAc,CAAC,aAAa,EAAE,MAAM,EAAE,MAAM,CAAC,CAAC;IAM1D,CAAC,CAAA;AACL,CAAC;AATe,mBAAW,cAS1B,CAAA"}

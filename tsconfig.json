@@ -3,7 +3,7 @@
         "declaration": true,
         "target": "es6",
         "module": "commonjs",
-        "watch": true,
+        "watch": false,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "noImplicitAny": false,
