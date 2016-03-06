@@ -105,7 +105,9 @@ And open [localhost:4500](http://localhost:4500) or [localhost:4500/docs](http:/
 
 ## Contributors
 
-[<img alt="sondreb" src="https://avatars.githubusercontent.com/u/309938?v=3&s=117" width="117">](https://github.com/sondreb) |[<img alt="kommundsen" src="https://avatars.githubusercontent.com/u/423868?v=3&s=117" width="117">](https://github.com/kommundsen)
+[<img alt="sondreb" src="https://avatars.githubusercontent.com/u/309938?v=3&s=117" width="117">](https://github.com/sondreb) |[<img alt="kommundsen" src="https://avatars.githubusercontent.com/u/423868?v=3&s=117" width="117">](https://github.com/kommundsen) |
+:---: |:---: |
+[sondreb](https://github.com/sondreb) |[kommundsen](https://github.com/kommundsen) |
 
 ## Change Log
     

@@ -53,7 +53,6 @@
     "devDependencies": {
         "code": "2.x.x",
         "eslint": "2.x.x",
-        "github-markdown-css": "2.2.1",
         "gulp": "3.x.x",
         "lab": "10.x.x",
         "typescript": "1.x.x"
