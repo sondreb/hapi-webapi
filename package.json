@@ -29,6 +29,7 @@
         "api"
     ],
     "license": "MIT",
+    "homepage": "https://github.com/sondreb/hapi-webapi#readme",
     "typescript": {
         "definition": "lib/Index.d.ts"
     },

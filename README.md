@@ -111,7 +111,7 @@ And open [localhost:4500](http://localhost:4500) or [localhost:4500/docs](http:/
 
 ## Change Log
     
-View the [Change Log](CHANGELOG.md) to keep up-to-date on API and project changes.
+View the [change log](CHANGELOG.md) to keep up-to-date on API and project changes.
 
 ## License
     
