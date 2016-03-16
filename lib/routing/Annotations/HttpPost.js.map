@@ -1,1 +1,0 @@
-{"version":3,"file":"HttpPost.js","sourceRoot":"","sources":["../../../src/routing/Annotations/HttpPost.ts"],"names":[],"mappings":"AAAA,YAAY,CAAC;AAEb,OAAO,CAAC,kBAAkB,CAAC,CAAC;AAE5B;IACI,MAAM,CAAC,CAAC,MAAc,EAAE,WAAmB,EAAE,UAAwC;QAEjF,OAAO,CAAC,cAAc,CAAC,QAAQ,EAAE,MAAM,EAAE,UAAU,CAAC,KAAK,CAAC,CAAC;QAC3D,MAAM,CAAC,UAAU,CAAC;IACtB,CAAC,CAAC;AACN,CAAC;AANe,gBAAQ,WAMvB,CAAA"}

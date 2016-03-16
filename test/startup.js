@@ -1,6 +1,6 @@
 "use strict";
-var WebApi = require("../lib/Index");
-var UsersController_1 = require("./Controllers/UsersController");
+const WebApi = require("../lib/Index");
+const UsersController_1 = require("./Controllers/UsersController");
 const pgk = require("../package.json");
 class Startup {
     Configuration(app) {
@@ -13,4 +13,3 @@ class Startup {
     }
 }
 exports.Startup = Startup;
-//# sourceMappingURL=Startup.js.map

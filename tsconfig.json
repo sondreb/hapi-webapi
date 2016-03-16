@@ -10,11 +10,12 @@
         "removeComments": true,
         "preserveConstEnums": true,
         "inlineSourceMap": false,
-        "sourceMap": true,
-        "moduleResolution": "node",
-        "outDir": "lib"
+        "sourceMap": false,
+        "moduleResolution": "node"
     },
-    "files": [
-        "src/Index.ts"
+    "exclude": [
+        "node_modules",
+        "typings",
+        "test"
     ]
 }

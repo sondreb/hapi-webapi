@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var WebApi = require("../../lib/Index");
-let UsersController = class extends WebApi.ApiController {
+const WebApi = require("../../lib/Index");
+let UsersController = class UsersController extends WebApi.ApiController {
     getUserById(id) {
         return "getUserById:" + id;
     }
@@ -49,4 +49,3 @@ UsersController = __decorate([
     __metadata('design:paramtypes', [])
 ], UsersController);
 exports.UsersController = UsersController;
-//# sourceMappingURL=UsersController.js.map

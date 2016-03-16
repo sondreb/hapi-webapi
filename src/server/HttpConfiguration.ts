@@ -2,7 +2,9 @@
 
 const merge = require("merge");
 
-import {IDictionary, Dictionary, Collection} from "../collections/Index";
+import {IDictionary, Dictionary} from "../collections/Dictionary";
+import {Collection} from "../collections/Collection";
+
 import {IFilter} from "../middleware/Filter";
 import {IHttpRoute} from "../routing/HttpRoute";
 import {WebApp} from "./WebApp";

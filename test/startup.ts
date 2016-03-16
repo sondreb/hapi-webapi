@@ -1,6 +1,9 @@
 /// <reference path="../lib/Index.d.ts" />
 "use strict";
 
+
+import {IStartup} from '../lib/Index';
+
 import WebApi = require("../lib/Index");
 import {UsersController} from "./Controllers/UsersController";
 

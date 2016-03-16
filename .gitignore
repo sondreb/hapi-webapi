@@ -1,4 +1,9 @@
 node_modules/
+hapi-webapi-*
+
+*.d.ts
+*.js.map
+
 typings/
 *.log
 *.tgz

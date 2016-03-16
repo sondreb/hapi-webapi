@@ -1,1 +1,0 @@
-{"version":3,"file":"ApiController.js","sourceRoot":"","sources":["../../src/controllers/ApiController.ts"],"names":[],"mappings":"AAAA,YAAY,CAAC;AAcb;IACI;QACI,IAAI,CAAC,IAAI,GAAG,IAAI,CAAC;IACrB,CAAC;IAQS,EAAE,KAAK,CAAC;;IAER,QAAQ;QACd,MAAM,CAAC,IAAI,KAAK,EAAE,CAAC;IACvB,CAAC;;IAES,UAAU,CAAC,IAAoB,IAAI,CAAC;;IACpC,mBAAmB,KAAK,CAAC;;AACvC,CAAC;AAnBY,qBAAa,gBAmBzB,CAAA"}

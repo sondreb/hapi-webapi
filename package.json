@@ -1,6 +1,6 @@
 {
     "name": "hapi-webapi",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "description": "Implements abstraction for Hapi in TypeScript that makes it similar to ASP.NET WebAPI to implement APIs on Hapi.",
     "main": "index.js",
     "scripts": {
@@ -30,9 +30,6 @@
     ],
     "license": "MIT",
     "homepage": "https://github.com/sondreb/hapi-webapi#readme",
-    "typescript": {
-        "definition": "lib/Index.d.ts"
-    },
     "dependencies": {
         "blipp": "2.x.x",
         "glob": "7.x.x",
@@ -52,11 +49,13 @@
         "vision": "4.x.x"
     },
     "devDependencies": {
+        "dts-generator": "1.x.0",
         "code": "2.x.x",
         "eslint": "2.x.x",
         "gulp": "3.x.x",
         "lab": "10.x.x",
-        "typescript": "1.x.x"
+        "typescript": "1.x.x",
+        "gulp-sequence": "0.4.x"
     },
     "eslintConfig": {
         "env": {
