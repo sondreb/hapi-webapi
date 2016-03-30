@@ -3,6 +3,8 @@ hapi-webapi-*
 
 *.d.ts
 *.js.map
+*.js
+!gulpfile.js
 
 typings/
 *.log
