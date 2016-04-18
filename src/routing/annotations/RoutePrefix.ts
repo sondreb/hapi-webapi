@@ -1,6 +1,6 @@
 "use strict";
 
-require("reflect-metadata");
+import "reflect-metadata";
 
 export function RoutePrefix(prefix: string) {
     return function(target: Function) {

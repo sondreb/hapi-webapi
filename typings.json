@@ -2,5 +2,8 @@
   "ambientDependencies": {
     "hapi": "github:DefinitelyTyped/DefinitelyTyped/hapi/hapi.d.ts#78b5a657f9120a4a67913effa2da580b2e35ce74",
     "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#48c1e3c1d6baefa4f1a126f188c27c4fefd36bff"
+  },
+  "dependencies": {
+    "es6-promise": "registry:npm/es6-promise#3.0.0+20160211003958"
   }
 }

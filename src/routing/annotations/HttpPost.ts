@@ -1,6 +1,6 @@
 "use strict";
 
-require("reflect-metadata");
+import "reflect-metadata";
 
 export function HttpPost() {
     return (target: Object, propertyKey: string, descriptor: TypedPropertyDescriptor<any>) => {

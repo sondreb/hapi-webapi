@@ -1,6 +1,9 @@
+/// <reference path="../../typings/main.d.ts" />
+
 "use strict";
 
 import {HttpRequestMessage} from "./HttpRequestMessage"
+import {Promise} from "es6-promise";
 
 export class RequestHandler {
     type: any;
@@ -38,6 +41,11 @@ export class RequestHandler {
         }
 
         var response = controller[this.method](parameters);
+        if(response instanceof Promise ){
+            response.then(reply).catch(function(error){
+                reply({error:error});
+            });
+        }
         reply(response);
     };
 }
