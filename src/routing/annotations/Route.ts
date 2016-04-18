@@ -1,6 +1,6 @@
 "use strict";
 
-require("reflect-metadata");
+import "reflect-metadata";
 
 export function Route(template: string) {
     return (target: Object, propertyKey: string, descriptor: TypedPropertyDescriptor<any>) => {
