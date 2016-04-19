@@ -86,7 +86,12 @@ export class WebApp {
         start.Configuration(appBuilder);
 
         const server = new Hapi.Server();
-        server.connection({ port: options.port });
+        server.connection(
+            { 
+                port: options.port,
+                routes: { cors: options.cors}
+            }
+        );
 
         console.log('Count of controllers: ' + appBuilder.controllers.count());
 
