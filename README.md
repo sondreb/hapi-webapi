@@ -31,6 +31,9 @@ import {Startup} from "./Startup";
 var options = new StartOptions();
 options.port = 4600;
 
+//To enable CORS set options.cors to true. Default value is false
+options.cors = true;
+
 WebApp.Start<Startup>(Startup, options);
 ```
 
