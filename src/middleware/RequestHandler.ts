@@ -30,7 +30,7 @@ export class RequestHandler {
         controller.request = new HttpRequestMessage(request);
 
         var parameters = [];
-
+        
         // TODO: Register the parameter NAMES for controller methods so we can send correct params.
         for (var k in request.params) {
             console.log('Parameter: ' + k + ':' + request.params[k]);
@@ -38,6 +38,10 @@ export class RequestHandler {
             /*if (request.params.hasOwnProperty(k)) {
                user[k] = request.params[k];
             }*/
+        }
+        
+        if(request.payload){
+            parameters.push(request.payload);
         }
 
         var response = controller[this.method](parameters);
