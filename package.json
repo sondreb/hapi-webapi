@@ -1,6 +1,6 @@
 {
     "name": "hapi-webapi",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Implements abstraction for Hapi in TypeScript that makes it similar to ASP.NET WebAPI to implement APIs on Hapi.",
     "main": "index.js",
     "scripts": {
@@ -9,7 +9,8 @@
         "prepublish": "",
         "test": "tsc --project test; node test/test.js",
         "setup": "npm install && typings install",
-        "build": "tsc"
+        "build": "tsc",
+        "package": "npm pack"
     },
     "author": {
         "name": "Sondre Bjellås",
