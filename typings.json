@@ -1,5 +1,5 @@
 {
-  "ambientDependencies": {
+  "globalDependencies": {
     "hapi": "registry:dt/hapi#13.0.0+20160417144856",
     "node": "registry:dt/node#4.0.0+20160412142033"
   },

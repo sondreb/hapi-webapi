@@ -1,12 +1,9 @@
-/// <reference path="../typings/main.d.ts" />
-/// <reference path="../lib/Index.d.ts" />
+/// <reference path="globals.d.ts" />
 
-"use strict";
-
-import WebApi = require("../lib/Index");
+import {WebApp, StartOptions} from '../server';
 import {Startup} from "./Startup";
 
-var options = new WebApi.StartOptions();
-options.port = 4500;
+var options = new StartOptions();
+options.port = 4600;
 
-WebApi.WebApp.Start<Startup>(Startup, options);
+WebApp.Start<Startup>(Startup, options);

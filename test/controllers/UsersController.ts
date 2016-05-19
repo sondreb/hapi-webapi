@@ -1,25 +1,25 @@
-/// <reference path="../../lib/Index.d.ts" />
 "use strict";
 
-import WebApi = require("../../lib/Index");
+import {ApiController} from '../../controllers';
+import {RoutePrefix, Route, HttpGet, HttpDelete, HttpPut, HttpPost} from '../../routing';
 
-@WebApi.RoutePrefix("users")
-export class UsersController extends WebApi.ApiController {
-    @WebApi.Route("{id}")
-    @WebApi.HttpGet()  // Also supports @HttpPut, @HttpPost, @HttpDelete
+@RoutePrefix("users")
+export class UsersController extends ApiController {
+    @Route("{id}")
+    @HttpGet()  // Also supports @HttpPut, @HttpPost, @HttpDelete
     getUserById(id: string) {
 
         return "getUserById:" + id;
     }
 
-    @WebApi.Route("search")
-    @WebApi.HttpPost() 
+    @Route("search")
+    @HttpPost() 
     searchUsers(id: string) {
         return this.notFound();
     }
 
-    @WebApi.Route("list")
-    @WebApi.HttpGet()
+    @Route("list")
+    @HttpGet()
     list() {
         // Examples of request object values available:
         // Url object.

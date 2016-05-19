@@ -1,6 +1,6 @@
 {
     "name": "hapi-webapi",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Implements abstraction for Hapi in TypeScript that makes it similar to ASP.NET WebAPI to implement APIs on Hapi.",
     "main": "index.js",
     "scripts": {
@@ -35,22 +35,23 @@
         "blipp": "2.x.x",
         "glob": "7.x.x",
         "glue": "3.x.x",
-        "good": "6.x.x",
-        "good-console": "5.x.x",
+        "good": "7.x.x",
+        "good-console": "6.x.x",
         "hapi": "13.x.x",
         "hapi-api-version": "1.x.x",
-        "hapi-auth-jwt2": "5.x.x",
+        "hapi-auth-jwt2": "6.x.x",
         "hapi-swaggered": "2.x.x",
         "hapi-swaggered-ui": "2.x.x",
-        "inert": "3.x.x",
+        "inert": "4.x.x",
         "joi": "8.x.x",
         "merge": "1.x.x",
         "plugo": "0.3.x",
         "reflect-metadata": "0.1.x",
-        "vision": "4.x.x"
+        "vision": "4.x.x",
+        "es6-promise": "3.x.x"
     },
     "devDependencies": {
-        "dts-generator": "1.x.0",
+        "dts-generator": "1.x.x",
         "code": "2.x.x",
         "eslint": "2.x.x",
         "gulp": "3.x.x",

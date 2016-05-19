@@ -13,8 +13,12 @@ export class WebApp {
 
         var modules = new Collection<any>();
 
-        modules.add({ type: require('good'), options: {} });
-        modules.add({ type: require('good-console'), options: {} });
+        modules.add({ type: require('good'), options: {
+            ops: { interval: 1000}
+        } });
+        
+        // Disable for now, returns runtime error.
+        //modules.add({ type: require('good-console') });
         modules.add({ type: require('blipp'), options: {} });
 
         if (app.configuration.properties["swagger:enabled"] === true)
@@ -162,10 +166,19 @@ export class WebApp {
         var modules = WebApp.activeModules(appBuilder);
 
         modules.getItems().forEach(function(module) {
-            server.register({
+            
+            let moduleRegistration : any = {
                 register: module.type,
-                options: module.options
-            }, (err) => {
+            };
+            
+            if (module.options)
+            {
+                console.log('ADDING OPTIONS');
+                console.log(module.options);
+                moduleRegistration.options = module.options;
+            }
+            
+            server.register(moduleRegistration, (err) => {
                 if (err) {
                     console.error('Failed to load plugin:', err);
                 }

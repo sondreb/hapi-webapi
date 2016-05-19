@@ -1,6 +1,4 @@
-/// <reference path="../../typings/main.d.ts" />
-
-"use strict";
+/// <reference path="../../typings/index.d.ts" />
 
 import {HttpRequestMessage} from "./HttpRequestMessage"
 import {Promise} from "es6-promise";
